@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="image.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <title>Ethiopian Bus Ticket System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1 class="title">WUBETU ADANE</h1>
+    <h2 class="text-animation"><span>Welcome to Ethiopia Bus Station</span></h2>
+    <p class="subtitle">Safe, Reliable, and Fast Travel</p>
+</header>
+
+<section class="intro">
+    <div class="info">
+        <h2>Gondar University</h2>
+        <p><strong>Department of Information Technology</strong></p>
+        <p>3<sup>rd</sup> Year, 1<sup>st</sup> Semester — Group 2  IP Project</p>
+    </div>
+    <img src="bus.jpg" alt="Ethiopian Bus Station" class="hero">
+</section>
+
+<section class="list">
+    <h2>Bus Stations in Ethiopia</h2>
+    <ol>
+        <li>Gondar
+        <li>Bahir Dar</li>
+        <li>Addis Ababa</li>
+        <li>Debre Markos</li>
+    </ol>
+</section>
+
+<section class="schedule">
+    <h2>Bus Schedule</h2>
+    <table>
+        <tr>
+            <th>Type</th><th>ID</th><th>From</th><th>Destination</th><th>Departure</th><th>Arrival</th><th>Price (ETB)</th><th>Distance (km)</th>
+        </tr>
+        <tr>
+            <td>Bus</td><td>128555994</td><td>Bahir Dar</td><td>Addis Ababa</td><td>11:00 PM</td><td>11:00 AM</td><td>8000</td><td>500</td>
+        </tr>
+        <tr>
+            <td>Minibus</td><td>199450</td><td>Bahir Dar</td><td>Debre Markos</td><td>12:00 PM</td><td>4:00 PM</td><td>1000</td><td>200</td>
+        </tr>
+    </table>
+</section>
+
+<section class="form-section">
+    <h2>Book Your Bus Ticket</h2>
+    <form id="ticketForm" method="POST" action="submit_ticket.php">
+        <label>From:
+            <select name="from" required>
+                <option value="">Select</option>
+                <option value="Bahir Dar">Bahir Dar</option>
+                <option value="Addis Ababa">Addis Ababa</option>
+                <option value="Debre Markos">Debre Markos</option>
+            </select>
+        </label>
+
+        <label>To:
+            <select name="to" required>
+                <option value="">Select</option>
+                <option value="Bahir Dar">Bahir Dar</option>
+                <option value="Addis Ababa">Addis Ababa</option>
+                <option value="Debre Markos">Debre Markos</option>
+            </select>
+        </label><br>
+
+        <label>First Name: <input type="text" name="fname" placeholder="Enter your first name" required></label><br>
+        <label>Last Name: <input type="text" name="lname" placeholder="Enter your last name" required></label><br>
+        <label>ID Number: <input type="text" name="idnum" placeholder="Enter your ID number" required></label><br>
+        <label>Email: <input type="email" name="email" placeholder="Enter your email"></label><br>
+        <label>Phone: <input type="tel" name="phone" placeholder="+251..." required></label><br>
+
+        <label>Gender:</label>
+        <input type="radio" name="gender" value="Male" required> Male
+        <input type="radio" name="gender" value="Female" required> Female <br>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+</section>
+
+<section class="links">
+    <a href="pro.jpg" target="_blank">🖼️ View Picture</a> |
+    <a href="files/ticket-info.pdf" download>📄 Download Info PDF</a> |
+    <a href="mailto:wubetuadane24@gmail.com">📧 Send Email</a> |
+    <a href="tel:+251938397464">📞 Call Us</a>
+</section>
+<footer>
+    <p>© 2025 Gondar University — Bus Ticket Project</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
